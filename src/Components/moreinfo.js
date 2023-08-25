@@ -1,29 +1,27 @@
 import styled from 'styled-components';
-import BasicTable from './table';
 
 
-const InfoStyles = styled.p`
+const InfoStyles = styled.aside`
     color: white;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
 `;
 
-const TableStyles = styled.table`
-    color: white;
-    border: 1px solid white;
-`;
+
 
 
 const MoreInfo = () => {
 return (
 	<>
 		<InfoStyles>
-            Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:
-        </InfoStyles>
-		
-        <BasicTable />
+				Looking for your new best friend? The following organizations can help you find and adopt the perfect companion
+		</InfoStyles>
 	</>
 );
 }
 
 
 
-export default MoreInfo
+export default MoreInfo;

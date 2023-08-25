@@ -4,6 +4,7 @@ import Hero from './Components/hero';
 import MediaCard from './Components/about';
 import Intro from './Components/intro';
 import MoreInfo from './Components/moreinfo';
+import BasicTable from './Components/table';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Hero />
       <Intro />
       <MediaCard />
-      <MoreInfo />
+      <BasicTable/>
 </div>
   );
 }
