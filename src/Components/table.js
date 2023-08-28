@@ -13,11 +13,11 @@ function createData(resources, URL) {
 }
 
 const rows = [
-createData("General Adoption Resources", "theshelterpetproject.org/ "), 
-createData("ASPCA", "aspca.org/"),
-createData("Fish Rescue", "sterlingshelter.org/humane-society/koi-fish-rescue/"),
-createData("Snake Rescue", "savethesnakes.org/snakerescuecall/"),
-
+	createData("General Adoption Resources", "theshelterpetproject.org/ "),
+	createData("ASPCA", "aspca.org/"),
+	createData("Fish Rescue", "sterlingshelter.org/humane-society/koi-fish-rescue/"),
+	createData("Snake Rescue", "savethesnakes.org/snakerescuecall/"),
+	createData("Bird Rescue", "https://ftlob.rescuegroups.org/")
 ];
 
 export default function BasicTable() {
@@ -25,14 +25,21 @@ export default function BasicTable() {
 		<>
 			<TableContainer
 				component={Paper}
-				sx={{ backgroundColor: "#003B6D", color: "white", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}
+				sx={{
+					backgroundColor: "#003B6D",
+					color: "white",
+					display: "flex",
+					justifyContent: "center",
+					alignItems: "center",
+					flexDirection: "column",
+				}}
 			>
 				<MoreInfo />
-				<Table sx={{ maxWidth: 650 }} aria-label="simple table">
+				<Table sx={{ maxWidth: 1 }} aria-label="simple table">
 					<TableHead>
 						<TableRow>
-							<TableCell sx={{ fontWeight: "bold", color: "white" }}>Resources</TableCell>
-							<TableCell sx={{ fontWeight: "bold", color: "white" }} align="right">
+							<TableCell sx={{ fontWeight: "bold", color: "white", fontSize: 18 }}>Resources</TableCell>
+							<TableCell sx={{ fontWeight: "bold", color: "white", fontSize: 18 }} align="right">
 								URL
 							</TableCell>
 						</TableRow>

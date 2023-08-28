@@ -13,8 +13,13 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
+const pages = [
+	{ label: "Home", link: "/" },
+	{ label: "Cats", link: "/views/cats" },
+	{ label: "Pricing", link: "/pricing" },
+	{ label: "Blog", link: "/blog" },
+];
 
-const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -24,6 +29,7 @@ function ResponsiveAppBar() {
 	const handleOpenNavMenu = (event) => {
 		setAnchorElNav(event.currentTarget);
 	};
+
 	const handleOpenUserMenu = (event) => {
 		setAnchorElUser(event.currentTarget);
 	};
@@ -37,7 +43,7 @@ function ResponsiveAppBar() {
 	};
 
 	return (
-		<AppBar sx={{backgroundColor: "#003B6D"}} position="static">
+		<AppBar sx={{ backgroundColor: "#6699CC" }} position="static">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
 					<AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -89,8 +95,8 @@ function ResponsiveAppBar() {
 							}}
 						>
 							{pages.map((page) => (
-								<MenuItem key={page} onClick={handleCloseNavMenu}>
-									<Typography textAlign="center">{page}</Typography>
+								<MenuItem key={page.label} onClick={handleCloseNavMenu}>
+									<Typography textAlign="center">{page.label}</Typography>
 								</MenuItem>
 							))}
 						</Menu>
@@ -115,12 +121,20 @@ function ResponsiveAppBar() {
 						LOGO
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-						{pages.map((page) => (
-							<Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-								{page}
-							</Button>
-						))}
-					</Box>
+  {pages.map((page) => (
+    <a
+      key={page.label}
+      href={page.link}       // Use 'href' for navigation
+      onClick={handleCloseNavMenu}
+      className="nav-link"   // Add a class for styling if needed
+      style={{ textDecoration: 'none' }} // Optional: Remove underline
+    >
+      <Button sx={{ my: 2, color: "white", display: "block" }}>
+        {page.label}
+      </Button>
+    </a>
+  ))}
+</Box>
 
 					<Box sx={{ flexGrow: 0 }}>
 						<Tooltip title="Open settings">
@@ -156,4 +170,5 @@ function ResponsiveAppBar() {
 		</AppBar>
 	);
 }
+
 export default ResponsiveAppBar;
