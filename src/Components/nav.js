@@ -15,9 +15,9 @@ import PetsIcon from "@mui/icons-material/Pets";
 
 const pages = [
 	{ label: "Home", link: "/" },
-	{ label: "Cats", link: "views/cats" },
-	{ label: "Dogs", link: "views/dogs" },
-	{ label: "Birds", link: "views/birds" },
+	{ label: "Cats", link: "/views/cats" }, // Use absolute paths
+	{ label: "Dogs", link: "/views/dogs" }, // Use absolute paths
+	{ label: "Birds", link: "/views/birds" }, // Use absolute paths
 ];
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -68,7 +68,7 @@ function ResponsiveAppBar() {
 					<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
 						<IconButton
 							size="large"
-							aria-label="account of current user"
+							aria-label="menu"
 							aria-controls="menu-appbar"
 							aria-haspopup="true"
 							onClick={handleOpenNavMenu}
@@ -101,6 +101,7 @@ function ResponsiveAppBar() {
 							))}
 						</Menu>
 					</Box>
+
 					<PetsIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
 					<Typography
 						variant="h5"
@@ -120,28 +121,27 @@ function ResponsiveAppBar() {
 					>
 						LOGO
 					</Typography>
+
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						{pages.map((page) => (
-							<a
+							<Button
 								key={page.label}
-								href={page.link} // Use 'href' for navigation
+								href={page.link} // Use absolute paths
 								onClick={handleCloseNavMenu}
-								className="nav-link" // Add a class for styling if needed
-								style={{ textDecoration: "none" }} // Optional: Remove underline
+								sx={{ my: 2, color: "white", display: "block" }}
 							>
-								<Button sx={{ my: 2, color: "white", display: "block" }}>{page.label}</Button>
-							</a>
+								{page.label}
+							</Button>
 						))}
 					</Box>
 
 					<Box sx={{ flexGrow: 0 }}>
 						<Tooltip title="Open settings">
 							<IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-								<Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+								<Avatar alt="User" src="/static/images/avatar.jpg" />
 							</IconButton>
 						</Tooltip>
 						<Menu
-							sx={{ mt: "45px" }}
 							id="menu-appbar"
 							anchorEl={anchorElUser}
 							anchorOrigin={{
