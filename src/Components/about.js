@@ -80,8 +80,7 @@ export default function MediaCard() {
 							Birds
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches
-							long and a little over 1/20 of an ounce) to as large as an ostrich. Click learn more below to find out more about caring
+							Birds are very intriguing creatures with specific needs regarding their care and relationships with other birds. Click learn more below to find out more about caring
 							for your bird.
 						</Typography>
 					</CardContent>
