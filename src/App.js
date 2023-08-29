@@ -6,8 +6,7 @@ import Cats from "./views/cats";
 import Footer from "./Components/footer";
 import Birds from "./views/birds";
 import Dogs from "./views/dogs";
-
-
+import MUIForm from "./Components/form";
 
 function App() {
 	return (
@@ -15,12 +14,12 @@ function App() {
 			<ResponsiveAppBar />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
-				<Route path="views/cats" element={<Cats/>} />
-        		<Route path="views/birds" element={<Birds/>} />
-        		<Route path="views/dogs" element={<Dogs/>} />
-				
+				<Route path="views/cats" element={<Cats />} />
+				<Route path="views/birds" element={<Birds />} />
+				<Route path="views/dogs" element={<Dogs />} />
 			</Routes>
-      <Footer />
+			<MUIForm />
+			<Footer />
 		</div>
 	);
 }

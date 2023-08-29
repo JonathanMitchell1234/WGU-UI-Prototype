@@ -29,7 +29,7 @@ export default function MediaCard() {
 					<CardMedia
 						sx={{ height: 140 }}
 						image="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2943&q=80"
-						title="green iguana"
+						title="cats"
 					/>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
@@ -51,7 +51,7 @@ export default function MediaCard() {
 					<CardMedia
 						sx={{ height: 140 }}
 						image="https://plus.unsplash.com/premium_photo-1676479611993-05b0c9232f84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3006&q=80"
-						title="green iguana"
+						title="dogs"
 					/>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
@@ -73,15 +73,15 @@ export default function MediaCard() {
 					<CardMedia
 						sx={{ height: 140 }}
 						image="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3113&q=80"
-						title="green iguana"
+						title="birds"
 					/>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
 							Birds
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							Birds are very intriguing creatures with specific needs regarding their care and relationships with other birds. Click learn more below to find out more about caring
-							for your bird.
+							Birds are very intriguing creatures with specific needs regarding their care and relationships with other birds. Click
+							learn more below to find out more about caring for your bird.
 						</Typography>
 					</CardContent>
 					<CardActions>
