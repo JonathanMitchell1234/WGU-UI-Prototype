@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import styled from "styled-components";
-import { Link } from "react-router-dom"; // Import the Link component
+import { Link } from "react-router-dom"; 
 
 const CardContainer = styled.div`
 	display: flex;
@@ -25,7 +25,7 @@ export default function MediaCard() {
 	return (
 		<>
 			<CardContainer>
-				<Card sx={{ maxWidth: 545, border: "2px solid white" }}>
+				<Card sx={{ maxWidth: 545, border: "2px solid white" }} >
 					<CardMedia
 						sx={{ height: 140 }}
 						image="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2943&q=80"
@@ -41,9 +41,8 @@ export default function MediaCard() {
 						</Typography>
 					</CardContent>
 					<CardActions>
-						<Button size="small">Share</Button>
 						<Button size="small">
-							<Link to="/views/cats">Learn More</Link> {/* Use Link component */}
+							<Link to="/views/cats">Learn More</Link> 
 						</Button>
 					</CardActions>
 				</Card>
@@ -63,9 +62,8 @@ export default function MediaCard() {
 						</Typography>
 					</CardContent>
 					<CardActions>
-						<Button size="small">Share</Button>
 						<Button size="small">
-							<Link to="/views/dogs">Learn More</Link> {/* Use Link component */}
+							<Link to="/views/dogs">Learn More</Link>
 						</Button>
 					</CardActions>
 				</Card>
@@ -85,9 +83,8 @@ export default function MediaCard() {
 						</Typography>
 					</CardContent>
 					<CardActions>
-						<Button size="small">Share</Button>
 						<Button size="small">
-							<Link to="/views/birds">Learn More</Link> {/* Use Link component */}
+							<Link to="/views/birds">Learn More</Link> 
 						</Button>
 					</CardActions>
 				</Card>

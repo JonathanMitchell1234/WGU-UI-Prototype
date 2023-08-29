@@ -39,7 +39,7 @@ const MUIForm = () => {
 
 	return (
 		<FormContainer>
-            <h2 style={{color: "white", padding: "10px"}}>Need a Consultation? Contact us Here.</h2>
+            <h2 style={{color: "white", padding: "10px"}}>Need new pet care consultation? Contact us here.</h2>
 			<form onSubmit={handleSubmit}>
 				<TextField
 					label="Name"
