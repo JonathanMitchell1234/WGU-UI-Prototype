@@ -12,6 +12,7 @@ const FooterStyles = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	margin 0 auto;
 `;
 
 const Footer = () => {

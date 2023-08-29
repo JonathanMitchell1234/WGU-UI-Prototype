@@ -13,11 +13,11 @@ function createData(resources, URL) {
 }
 
 const rows = [
-	createData("General Adoption Resources", "theshelterpetproject.org/ "),
-	createData("ASPCA", "aspca.org/"),
-	createData("Fish Rescue", "sterlingshelter.org/humane-society/koi-fish-rescue/"),
-	createData("Snake Rescue", "savethesnakes.org/snakerescuecall/"),
-	createData("Bird Rescue", "https://ftlob.rescuegroups.org/")
+	createData("General Adoption Resources", "http://theshelterpetproject.org/"),
+	createData("ASPCA", "http://aspca.org/"),
+	createData("Fish Rescue", "http://sterlingshelter.org/humane-society/koi-fish-rescue/"),
+	createData("Snake Rescue", "http://savethesnakes.org/snakerescuecall/"),
+	createData("Bird Rescue", "http://ftlob.rescuegroups.org/"),
 ];
 
 export default function BasicTable() {
@@ -32,7 +32,7 @@ export default function BasicTable() {
 					justifyContent: "center",
 					alignItems: "center",
 					flexDirection: "column",
-					padding: "1.5rem"
+					padding: "1.5rem",
 				}}
 			>
 				<MoreInfo />
@@ -52,7 +52,9 @@ export default function BasicTable() {
 									{row.resources}
 								</TableCell>
 								<TableCell align="right" sx={{ color: "white" }}>
-									{row.URL}
+									<a href={row.URL} target="_blank" rel="noopener noreferrer" style={{color: "white", textDecoration:"none"}}>
+										{row.URL}
+									</a>
 								</TableCell>
 							</TableRow>
 						))}

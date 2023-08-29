@@ -33,11 +33,10 @@ export default function MediaCard() {
 					/>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
-							Lizard
+							Cats
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except
-							Antarctica
+							Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. Click learn more below to find out more about caring for your cat.
 						</Typography>
 					</CardContent>
 					<CardActions>
@@ -53,11 +52,10 @@ export default function MediaCard() {
 					/>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
-							Lizard
+							Dogs
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except
-							Antarctica
+							The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Click learn more below to find out more about caring for your dog.
 						</Typography>
 					</CardContent>
 					<CardActions>
@@ -73,11 +71,10 @@ export default function MediaCard() {
 					/>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="div">
-							Lizard
+							Birds
 						</Typography>
 						<Typography variant="body2" color="text.secondary">
-							Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except
-							Antarctica
+							Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches long and a little over 1/20 of an ounce) to as large as an ostrich. Click learn more below to find out more about caring for your bird.
 						</Typography>
 					</CardContent>
 					<CardActions>

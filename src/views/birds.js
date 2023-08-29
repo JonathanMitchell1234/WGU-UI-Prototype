@@ -3,6 +3,7 @@ import Hero from "../Components/hero";
 import Intro from "../Components/intro";
 import styled from "styled-components";
 import browncat from "../images/browncat.jpg";
+import bird2 from "../images/bird2.jpg";
 
 const backgroundImage =
 	"https://images.unsplash.com/photo-1560813562-fd09315f5ce8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2932&q=80";
@@ -24,7 +25,7 @@ const Birds = () => {
 	return (
 		<>
 			<Hero backgroundImage={backgroundImage} title="Birds" />
-			<Intro title={introContent.title} content={introContent.content}  />
+			<Intro title={introContent.title} content={introContent.content} />
 			<MainInfo>
 				<h2 style={{ textAlign: "center" }}>
 					<strong>Caring for your Bird</strong>
@@ -34,7 +35,7 @@ const Birds = () => {
 					bird's depression such as an illness (either physical or mental), losing its companion, or increasingly becoming bored. Some signs
 					to help identify if your bird is experiencing depression may include the following:
 					<aside style={{ float: "right" }}>
-						<img src={browncat} alt="brown cat" style={{ width: 300, borderRadius: "8px" }} />
+						<img src={bird2} alt="bird on perch" style={{ width: 300, borderRadius: "8px" }} />
 					</aside>
 					<ul>
 						<li>reduced appetite</li>
@@ -42,9 +43,9 @@ const Birds = () => {
 						<li>aggressive behavior</li>
 						<li>songs have a different, more solemn tone</li>
 					</ul>
-					Four Weeks to One Year Kittens can start being introduced to soft wet kitten food, typically around three to four weeks after
-					birth. According to the ASPCA, kittens at this age should eat half to one cup of dry kitten food or six to nine ounces of wet
-					kitten food per day. If your kitten has difficulties eating hard food, a small amount of water can be added to soften the food.{" "}
+					It's important to note that the extent and nature of relational needs vary widely among bird species. Some are highly social,
+					living in large flocks or colonies, while others are more solitary. Understanding these relational needs is crucial for
+					conservation efforts and for providing appropriate care to captive birds.
 					<br /> <br />
 				</p>
 			</MainInfo>
