@@ -41,7 +41,7 @@ export default function MediaCard() {
 					</CardContent>
 					<CardActions>
 						<Button size="small">Share</Button>
-						<Button size="small"><a href='./views/cats'>Learn More</a></Button>
+						<Button size="small"><a href='views/cats'>Learn More</a></Button>
 					</CardActions>
 				</Card>
 				<Card sx={{ maxWidth: 545, border: "2px solid white" }}>
@@ -60,7 +60,7 @@ export default function MediaCard() {
 					</CardContent>
 					<CardActions>
 						<Button size="small">Share</Button>
-						<Button size="small"><a href='./views/dogs'>Learn More</a></Button>
+						<Button size="small"><a href='views/dogs'>Learn More</a></Button>
 					</CardActions>
 				</Card>
 				<Card sx={{ maxWidth: 545, border: "2px solid white" }}>
@@ -79,7 +79,7 @@ export default function MediaCard() {
 					</CardContent>
 					<CardActions>
 						<Button size="small">Share</Button>
-						<Button size="small"><a href='./views/birds'>Learn More</a></Button>
+						<Button size="small"><a href='views/birds'>Learn More</a></Button>
 					</CardActions>
 				</Card>
 			</CardContainer>

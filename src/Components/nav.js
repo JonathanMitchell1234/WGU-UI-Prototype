@@ -15,9 +15,9 @@ import PetsIcon from "@mui/icons-material/Pets";
 
 const pages = [
 	{ label: "Home", link: "/" },
-	{ label: "Cats", link: "/views/cats" },
-	{ label: "Dogs", link: "/views/dogs" },
-	{ label: "Birds", link: "/views/birds" },
+	{ label: "Cats", link: "views/cats" },
+	{ label: "Dogs", link: "views/dogs" },
+	{ label: "Birds", link: "views/birds" },
 ];
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
