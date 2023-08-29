@@ -32,6 +32,7 @@ export default function BasicTable() {
 					justifyContent: "center",
 					alignItems: "center",
 					flexDirection: "column",
+					padding: "1.5rem"
 				}}
 			>
 				<MoreInfo />

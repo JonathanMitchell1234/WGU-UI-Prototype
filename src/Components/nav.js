@@ -16,8 +16,8 @@ import AdbIcon from "@mui/icons-material/Adb";
 const pages = [
 	{ label: "Home", link: "/" },
 	{ label: "Cats", link: "/views/cats" },
-	{ label: "Pricing", link: "/pricing" },
-	{ label: "Blog", link: "/blog" },
+	{ label: "Dogs", link: "/views/dogs" },
+	{ label: "Birds", link: "/views/birds" },
 ];
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -121,20 +121,18 @@ function ResponsiveAppBar() {
 						LOGO
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-  {pages.map((page) => (
-    <a
-      key={page.label}
-      href={page.link}       // Use 'href' for navigation
-      onClick={handleCloseNavMenu}
-      className="nav-link"   // Add a class for styling if needed
-      style={{ textDecoration: 'none' }} // Optional: Remove underline
-    >
-      <Button sx={{ my: 2, color: "white", display: "block" }}>
-        {page.label}
-      </Button>
-    </a>
-  ))}
-</Box>
+						{pages.map((page) => (
+							<a
+								key={page.label}
+								href={page.link} // Use 'href' for navigation
+								onClick={handleCloseNavMenu}
+								className="nav-link" // Add a class for styling if needed
+								style={{ textDecoration: "none" }} // Optional: Remove underline
+							>
+								<Button sx={{ my: 2, color: "white", display: "block" }}>{page.label}</Button>
+							</a>
+						))}
+					</Box>
 
 					<Box sx={{ flexGrow: 0 }}>
 						<Tooltip title="Open settings">

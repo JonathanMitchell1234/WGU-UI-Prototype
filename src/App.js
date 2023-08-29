@@ -4,6 +4,8 @@ import ResponsiveAppBar from "./Components/nav";
 import HomePage from "./views/homepage";
 import Cats from "./views/cats";
 import Footer from "./Components/footer";
+import Birds from "./views/birds";
+import Dogs from "./views/dogs";
 
 
 
@@ -14,7 +16,9 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage />} /> {/* Render HomePage component on "/" */}
 				<Route path="/views/cats" element={<Cats/>} />
-				{/* Define more routes here */}
+        <Route path="/views/birds" element={<Birds/>} />
+        <Route path="/views/dogs" element={<Dogs/>} />
+				
 			</Routes>
       <Footer />
 		</div>

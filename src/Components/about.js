@@ -25,7 +25,7 @@ export default function MediaCard() {
   return (
 		<>
 			<CardContainer>
-				<Card sx={{ maxWidth: 445, border: "2px solid white" }}>
+				<Card sx={{ maxWidth: 545, border: "2px solid white" }}>
 					<CardMedia
 						sx={{ height: 140 }}
 						image="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2943&q=80"
@@ -42,10 +42,10 @@ export default function MediaCard() {
 					</CardContent>
 					<CardActions>
 						<Button size="small">Share</Button>
-						<Button size="small">Learn More</Button>
+						<Button size="small"><a href='./views/cats'>Learn More</a></Button>
 					</CardActions>
 				</Card>
-				<Card sx={{ maxWidth: 445, border: "2px solid white" }}>
+				<Card sx={{ maxWidth: 545, border: "2px solid white" }}>
 					<CardMedia
 						sx={{ height: 140 }}
 						image="https://plus.unsplash.com/premium_photo-1676479611993-05b0c9232f84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3006&q=80"
@@ -62,10 +62,10 @@ export default function MediaCard() {
 					</CardContent>
 					<CardActions>
 						<Button size="small">Share</Button>
-						<Button size="small">Learn More</Button>
+						<Button size="small"><a href='./views/dogs'>Learn More</a></Button>
 					</CardActions>
 				</Card>
-				<Card sx={{ maxWidth: 445, border: "2px solid white" }}>
+				<Card sx={{ maxWidth: 545, border: "2px solid white" }}>
 					<CardMedia
 						sx={{ height: 140 }}
 						image="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3113&q=80"
@@ -82,7 +82,7 @@ export default function MediaCard() {
 					</CardContent>
 					<CardActions>
 						<Button size="small">Share</Button>
-						<Button size="small">Learn More</Button>
+						<Button size="small"><a href='./views/birds'>Learn More</a></Button>
 					</CardActions>
 				</Card>
 			</CardContainer>
