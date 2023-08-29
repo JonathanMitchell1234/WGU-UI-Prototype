@@ -2,7 +2,6 @@ import React from "react";
 import Hero from "../Components/hero";
 import Intro from "../Components/intro";
 import styled from "styled-components";
-import browncat from "../images/browncat.jpg";
 import bird2 from "../images/bird2.jpg";
 
 const backgroundImage =
