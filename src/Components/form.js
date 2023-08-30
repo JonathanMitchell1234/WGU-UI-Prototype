@@ -39,7 +39,7 @@ const MUIForm = () => {
 
 	return (
 		<FormContainer>
-            <h2 style={{color: "white", padding: "10px"}}>Need new pet care consultation? Contact us here.</h2>
+			<h2 style={{ color: "white", padding: "10px" }}>Need new pet care consultation? Contact us here.</h2>
 			<form onSubmit={handleSubmit}>
 				<TextField
 					label="Name"
@@ -50,9 +50,11 @@ const MUIForm = () => {
 					fullWidth
 					margin="normal"
 					sx={{ backgroundColor: "white" }}
+					required="true"
 				/>
 				<TextField
 					label="Phone Number"
+					required="true"
 					variant="outlined"
 					name="phoneNumber"
 					value={formData.phoneNumber}
@@ -63,6 +65,7 @@ const MUIForm = () => {
 				/>
 				<TextField
 					label="Email"
+					required="true"
 					variant="outlined"
 					name="email"
 					type="email"
@@ -112,6 +115,20 @@ const MUIForm = () => {
 					margin="normal"
 					sx={{ backgroundColor: "white" }}
 				/>
+				<TextField
+					required="true"
+					label="Additional Comments"
+					variant="outlined"
+					name="message"
+					value={formData.message}
+					onChange={handleChange}
+					fullWidth
+					margin="normal"
+					multiline
+					rows={4} // You can adjust this value to make the text input taller
+					sx={{ backgroundColor: "white" }}
+				/>
+
 				<Button type="submit" variant="contained" color="primary">
 					Submit
 				</Button>
