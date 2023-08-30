@@ -46,6 +46,7 @@ const HeaderTitle = styled.h1`
 	color: white;
 	outline: 3px solid #bdbdbd;
 	-webkit-text-stroke: 1px black;
+	text-transform: uppercase;
 
 	@media (max-width: 768px) {
 		-webkit-text-stroke: 0px black;

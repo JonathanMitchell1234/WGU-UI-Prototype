@@ -21,7 +21,7 @@ const Footer = () => {
 			<FooterStyles>
 				<div>
 					<a href="https://www.facebook.com/Paradigm-Pet-Professionals-LLC-100232108852622">
-						<img src="https://img.icons8.com/ios-filled/50/676767/facebook-new.png" alt="facebook"/>
+						<img src="https://img.icons8.com/ios-filled/50/676767/facebook-new.png" alt="facebook" />
 					</a>
 					<a href="https://www.instagram.com/paradigmpetprofessionals/">
 						<img src="https://img.icons8.com/ios-filled/50/676767/instagram-new.png" alt="instagram" />
@@ -35,7 +35,7 @@ const Footer = () => {
 				</span>
 				<p>
 					© 2023{" "}
-					<a href="https://www.linkedin.com/in/paradigm-pet-professionals-llc-2b1a1b1b3/" style={{ color: "#BDBDBD" }}>
+					<a href="https://www.linkedin.com/in/paradigm-pet-professionals-llc-2b1a1b1b3/" style={{ color: "#676767" }}>
 						Paradigm Pet Professionals
 					</a>
 				</p>
