@@ -4,8 +4,7 @@ import MediaCard from "../Components/about";
 import BasicTable from "../Components/table";
 import Intro from "../Components/intro";
 
-const backgroundImage =
-	"https://images.unsplash.com/photo-1570018144715-43110363d70a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80";
+const backgroundImage = "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
 const introContent = {
 	title: '"Evidence-based pet care advice for every pet lover"',
