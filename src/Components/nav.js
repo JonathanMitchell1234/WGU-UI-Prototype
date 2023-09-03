@@ -12,13 +12,13 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import PetsIcon from "@mui/icons-material/Pets";
-import { Link } from "react-router-dom"; // Import the Link component
+import { Link } from "react-router-dom";
 
 const pages = [
   { label: "Home", link: "/" },
-  { label: "Cats", link: "/views/cats" }, // Use absolute paths
-  { label: "Dogs", link: "/views/dogs" }, // Use absolute paths
-  { label: "Birds", link: "/views/birds" }, // Use absolute paths
+  { label: "Cats", link: "/views/cats" }, 
+  { label: "Dogs", link: "/views/dogs" },
+  { label: "Birds", link: "/views/birds" },
 ];
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -51,7 +51,7 @@ function ResponsiveAppBar() {
           <Typography
             variant="h6"
             noWrap
-            component={Link} // Use Link component for home link
+            component={Link}
             to="/"
             sx={{
               mr: 2,

@@ -125,7 +125,7 @@ const MUIForm = () => {
 					fullWidth
 					margin="normal"
 					multiline
-					rows={4} // You can adjust this value to make the text input taller
+					rows={4}
 					sx={{ backgroundColor: "white" }}
 				/>
 
